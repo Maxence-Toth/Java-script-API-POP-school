@@ -47,3 +47,26 @@ fetch("https://pachyderme.net/students.json")
 
 
 // let div student qui contiendriat les trois divs
+
+var saveButton = document.querySelector("#saveButton");
+var loadButton = document.querySelector("#loadButton");
+var removeButton = document.querySelector("#removeButton");
+var promotionNameInput = document.querySelector("#promotionName");
+
+saveButton.addEventListener("click", savePromotionName);
+loadButton.addEventListener("click", loadPromotionName);
+removeButton.addEventListener("click", removePromotionName);
+
+function savePromotionName(event) {
+	localStorage.setItem("promotionName", JSON.stringify(promotionNameInput.value))
+}
+
+function loadPromotionName(event) {
+	promotionNameInput.value = JSON.parse(localStorage.getItem("promotionName"));
+}
+
+function removePromotionName(event) {
+	if (window.alert("êtes-vous sûr de vouloir supprimer le cache ?")) {
+  localStorage.removeItem("promotionName");
+  }
+}

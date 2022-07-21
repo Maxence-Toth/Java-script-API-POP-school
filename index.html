@@ -6,10 +6,18 @@
     <script src="app.js" defer ></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>API Undefined POP School</title>
 </head>
 <body>
-    <div class="">
+    <div class="promo max-w-sm rounded overflow-hidden shadow-lg gap-4 p-5 bg-neutral-300">
+        <label for="promotionName">Nom de la promotion:</label>
+        <input type="text" name="promotionName" id="promotionName" placeholder="Nom de la promotion">
+        <div class="localstorage">
+            <button class="max-w-sm rounded overflow-hidden shadow-lg gap-4 p-5 bg-neutral-300"" id="saveButton">Sauvegarder</button>
+            <button class="max-w-sm rounded overflow-hidden shadow-lg gap-4 p-5 bg-neutral-300"" id="loadButton">Charger</button>
+            <button class="max-w-sm rounded overflow-hidden shadow-lg gap-4 p-5 bg-neutral-300"" id="removeButton">Supprimer</button>
+        </div>
+    </div>
             <div id="header" class="grid grid-cols-3 gap-5 p-10">
 
                 
@@ -19,6 +27,6 @@
                 -->
                 </div>
             </div>
-    </div>
+
 </body>
 </html>

@@ -12,3 +12,21 @@ body {
     background-color: #0F5C59;
     cursor: pointer;
 }
+
+.localstorage {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+button {
+    border: solid;
+    border-color: white;
+    padding: 5px;
+    background-color: white;
+}
+
+.promo {
+    text-align: center;
+}
